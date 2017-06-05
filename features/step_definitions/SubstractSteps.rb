@@ -1,18 +1,14 @@
-Capybara.app_host = "http://www.google.com"
-Capybara.default_driver = :selenium
 
-#Given I am on the Google homepage
-Given(/^I am on the Google homepage$/) do
-  page.driver.browser.manage.window.maximize
-  visit ('http://www.google.com')
+
+Given(/^I have entered (\d+)\-(\d+) into the textbox$/) do |arg1, arg2|
+fill_in 'query', :with => arg1+"-"+arg2
 end
 
-#When I search for "houston dynamo tickets"
-When(/^I search for "([^"]*)"$/) do |valueToSearch|
-  fill_in 'q', with: valueToSearch
+When(/^I click (\w+)$/) do |compute|
+   click(compute)
 end
 
-#Then I will click the "Tickets | Houston Dynamo" link
-Then(/^I will click the "([^"]*)" link$/) do |searchLink|
-  click_link(searchLink)
+Then /^The result should be (\d+) on the screen$/ do |n|
+  #@result.should == n.to_i
 end
+#https://www.wolframalpha.com/input/?i=80-70
