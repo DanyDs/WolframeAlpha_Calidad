@@ -7,5 +7,5 @@ Feature: Addition
   Scenario: Add two numbers
     Given I am on the WolframAlpha homepage
     And I have entered 70+50 into the textbox
-    When I click compute
+    When I click  on the compute button
     Then The result should be 120
