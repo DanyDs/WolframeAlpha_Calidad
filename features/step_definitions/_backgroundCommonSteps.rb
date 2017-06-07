@@ -14,3 +14,7 @@ Then /^The result should be (\d+) on the screen$/ do |n|
     img['alt'].should == n
 end
 
+Then(/^The result should be a list of tips$/) do
+  page.has_css?("tips-wrapper")
+
+end
