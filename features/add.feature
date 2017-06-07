@@ -12,8 +12,14 @@ Feature: Addition
     When I click compute
     Then The result should be 120 on the screen
 
-    @maximize
-    Scenario: Add two numbers and one is 0
-      And I have entered 70+0 into the textbox
-      When I click compute
-      Then The result should be 70 on the screen
+  @maximize
+  Scenario: Add two numbers and one is 0
+    And I have entered 70+0 into the textbox
+    When I click compute
+    Then The result should be 70 on the screen
+
+  @maximize
+  Scenario: Add two numbers and one is '#'
+    And I have entered 70 + # into the textbox
+    When I click compute
+    Then The result should be a list of tips

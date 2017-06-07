@@ -15,5 +15,10 @@ Then /^The result should be (\d+) on the screen$/ do |n|
 end
 
 Then(/^The result should be ∞\^~ on the screen$/) do
-  
+
+end
+
+Then(/^The result should be a list of tips$/) do
+  page.has_css?("tips-wrapper")
+
 end
