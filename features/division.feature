@@ -6,7 +6,6 @@ Feature: Division
 Background:
     Given I am on the WolframAlpha homepage
 
-
   Scenario: Divide two numbers
     And I have entered 10/5 into the textbox
     When I click compute
