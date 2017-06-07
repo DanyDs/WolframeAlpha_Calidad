@@ -13,3 +13,7 @@ Then /^The result should be (\d+) on the screen$/ do |n|
     img = find(:xpath, xpath)
     img['alt'].should == n
 end
+
+Then(/^The result should be ∞\^~ on the screen$/) do
+  
+end
