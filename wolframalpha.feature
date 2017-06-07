@@ -54,7 +54,7 @@ Given: Yo he introducido “elevation Bolivia”
 When: Presiono la tecla enter
 Then: En la pantalla bajo el label “result” debe decir 6542 meters (world rank : 13th)
 
- Scenario: Obteniendo la equivalencia de longitud en pies a metros
+Scenario: Obteniendo la equivalencia de longitud en pies a metros
 Set up: Dirigirse al textbox que se encuentra debajo del label “Enter what you want to calculate or know about”
 Given: Yo he introducido “4 ft to m”
 When: Presiono la tecla enter
