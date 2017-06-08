@@ -23,3 +23,9 @@ Scenario: Subtract a symbol to a number
   And I have entered 70 - # into the textbox
   When I click compute
   Then The result should be a list of tips
+  
+@maximize
+  Scenario: Add two negative
+    And I have entered -70 - -30 into the textbox
+   When I click compute
+    Then The result should be -40 on the screen
