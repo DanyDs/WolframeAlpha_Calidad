@@ -14,6 +14,7 @@ Scenario: Login to WolframAlpha page with valid email and password
     And I click the "Sign in" button
 	Then I should be able to see the email "calidad@hotmail.com" in the page
 
+@maximize
 Scenario: Login to WolframAlpha page with valid email and wrong password
     When I enter the required fields as show below
 	|Email: 	    | calidad@hotmail.com   |
