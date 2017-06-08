@@ -19,7 +19,7 @@ Feature: Addition
     Then The result should be 70 on the screen
 
   @maximize
-  Scenario: Add two numbers and one is '#'
+  Scenario: Add a number with a symbol
     And I have entered 70 + # into the textbox
     When I click compute
     Then The result should be a list of tips
