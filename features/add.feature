@@ -23,3 +23,9 @@ Feature: Addition
     And I have entered 70 + # into the textbox
     When I click compute
     Then The result should be a list of tips
+
+  @maximize
+  Scenario: Add two negative numbers
+    And I have entered -70 + -30 into the textbox
+    When I click compute
+    Then The result should be -100 on the screen
