@@ -15,10 +15,18 @@ When(/^I enter the required fields as show below$/) do |table|
         end
         end
     end
+
 And(/^I click the "Sign in" button$/) do 
   click_button("sign-in-btn")
 end
+
 Then(/^I should be able to see the email "([^"]*)" in the page$/) do |email|
   sleep(5)
   expect(page).to have_content(email)
 end
+
+Then(/^I should be able to see the message "([^"]*)" in the page$/) do |message|
+  sleep(5)
+  expect(page).to have_content(message)
+end
+	 
