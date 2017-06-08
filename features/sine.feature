@@ -1,5 +1,5 @@
 Feature: Sine
-  In order to aviod misstakes on the page
+  In order to avoid mistakes on the page
   As a quality engineer
   I want to be told the sine of an angle
 
@@ -11,7 +11,7 @@ Background:
     And I have entered sin(90) into the textbox
     When I click compute
     Then The result should be 1 on the screen
-    
+
 @maximize
   Scenario: Sine of a negative angle
     And I have entered sin(-789) into the textbox

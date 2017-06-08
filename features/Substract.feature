@@ -1,5 +1,5 @@
 Feature: Substract two numbers
-  In order to aviod silly mistakes
+  In order to avoid silly mistakes
   As a quality engineer
   I want to be told the substraction of two numbers
 
@@ -23,7 +23,7 @@ Scenario: Subtract a symbol to a number
   And I have entered 70 - # into the textbox
   When I click compute
   Then The result should be a list of tips
-  
+
 @maximize
   Scenario: Add two negative
     And I have entered -70 - -30 into the textbox
