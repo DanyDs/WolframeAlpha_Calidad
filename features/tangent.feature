@@ -1,5 +1,5 @@
 Feature: Tangent
-  In order to aviod misstakes on the page
+  In order to avoid mistakes on the page
   As a quality engineer
   I want to be told the tangent of an angle
 

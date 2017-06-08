@@ -1,7 +1,7 @@
 Feature: Is greater than of two numbers
-  In order to aviod silly mistakes
+  In order to avoid silly mistakes
   As a quality engineer
-  I want to be told the substraction of two numbers
+  I want to be told if one number is greater than another
 
   Background:
     Given I am on the WolframAlpha homepage
