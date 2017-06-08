@@ -14,3 +14,7 @@ Then(/^The result should be \-(\d+) on the screen$/) do |n|
     img = find(:xpath, xpath)
     img['alt'].should == n
 end
+
+Given(/^I have entered (\d+) \* \# into the textbox$/) do |arg1|
+  fill_in 'query', :with => arg1+"+ #"
+end
