@@ -9,7 +9,7 @@ When(/^I enter the required fields as show below$/) do |table|
 	when "Email:"
     	fill_in 'j_username', :with => value
     	@email = value
-	when "Passoword:"
+	when "Password:"
 		fill_in 'j_password', :with => value
 		@password = value
         end
@@ -17,4 +17,8 @@ When(/^I enter the required fields as show below$/) do |table|
     end
 And(/^I click the "Sign in" button$/) do 
   click_button("sign-in-btn")
+end
+Then(/^I should be able to see the email "([^"]*)" in the page$/) do |email|
+  sleep(5)
+  expect(page).to have_content(email)
 end
