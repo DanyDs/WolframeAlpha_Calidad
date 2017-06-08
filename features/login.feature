@@ -20,3 +20,12 @@ Scenario: Login to WolframAlpha page with valid email and wrong password
     |Password: 	    | wrongpassword         |
     And I click the "Sign in" button
 	Then I should be able to see the message "The email address or password is not correct." in the page
+
+  @maximize
+  Scenario: Leave empty mail and password
+      When I enter the required fields as show below
+  	  |Email: 	      |    |
+      |Password: 	  |    |
+      And I click the "Sign in" button
+  	Then I should be able to see the message "Please correct the fields below." in the page
+
