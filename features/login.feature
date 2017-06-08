@@ -3,9 +3,11 @@ Feature: Login
   As a quality engineer
   I want to verify the log in process
 
+Background:
+  Given I am on the login page
 
+@maximize
 Scenario: Login to WolframAlpha page with valid email and password
-    Given I am on the login page
     When I enter the required fields as show below
 	  |Email: 	      | calidad@hotmail.com   |
     |Password: 	    | Calidad1              |
