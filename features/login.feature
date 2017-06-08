@@ -13,3 +13,12 @@ Scenario: Login to WolframAlpha page with valid email and password
     |Password: 	    | Calidad1              |
     And I click the "Sign in" button
 	Then I should be able to see the email "calidad@hotmail.com" in the page
+
+
+  @maximize
+  Scenario: Leave empty mail and password
+      When I enter the required fields as show below
+  	  |Email: 	      |    |
+      |Password: 	    |    |
+      And I click the "Sign in" button
+  	Then I should be able to see the email "Please correct the fields below." in the page
