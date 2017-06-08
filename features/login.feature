@@ -1,7 +1,7 @@
 Feature: Login
   In order to be logged in the page
   As a quality engineer
-  I want to verify the log in process
+  I want to verify the login process
 
 Background:
   Given I am on the login page
