@@ -18,3 +18,10 @@ Then(/^The result should be a list of tips$/) do
   page.has_css?("tips-wrapper")
 
 end
+
+Then(/^The result should be "([^"]*)" on the screen$/) do |arg1|
+  page.has_css?("Result")
+  xpath= '/html/body/div[1]/main/div/div[1]/wa-answers/section/section[2]/section/div[1]/div/img'
+  img = find(:xpath, xpath)
+  img['alt'].should == arg1
+end
