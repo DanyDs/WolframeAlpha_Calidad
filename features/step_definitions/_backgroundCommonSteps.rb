@@ -2,7 +2,6 @@ Given(/^I am on the WolframAlpha homepage$/) do
   visit ('/')
 end
 
-
 When(/^I click (\w+)$/) do |compute|
    click_button('Submit')
 end
