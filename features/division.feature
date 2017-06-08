@@ -15,3 +15,8 @@ Background:
     And I have entered 10/0 into the textbox
     When I click compute
     Then The result should be ∞^~ on the screen
+
+  Scenario: Divide two numbers and one is '#'
+    And I have entered 70 / # into the textbox
+    When I click compute
+    Then The result should be a list of tips

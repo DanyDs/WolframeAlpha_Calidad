@@ -16,5 +16,4 @@ end
 
 Then(/^The result should be a list of tips$/) do
   page.has_css?("tips-wrapper")
-
 end
